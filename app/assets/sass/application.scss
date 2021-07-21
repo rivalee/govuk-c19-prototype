@@ -16,3 +16,143 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/related-items";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+.statistics-grid {
+  margin-bottom: govuk-spacing(1);
+}
+
+.statistics-block {
+  min-height: 280px;
+}
+
+.red {
+border-left: 5px solid red;
+}
+
+.green {
+border-left: 5px solid green;
+}
+
+.trend-red {
+  color: red;
+}
+
+.trend-green {
+  color: green;
+}
+
+
+.link-to-stats {
+  padding: 30px 0 30px 0;
+}
+
+
+.govuk-header__content {
+  visibility: hidden;
+}
+.arrow {
+  float: left;
+  padding: 0 10px 10px 0;
+  margin: 0px 0 10px 0;
+  width: 30px !important;
+}
+
+
+
+.govuk-phase-banner {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 0px;
+}
+
+.important-actions a, a:visited {
+color: white;
+}
+
+start-page .govuk-phase-banner {
+  margin-bottom: govuk-spacing(6);
+  border-bottom-color: govuk-colour("light-blue");
+}
+
+.start-page main {
+  padding-top: 0;
+}
+
+.start-page-banner {
+  border-top: 10px solid yellow;
+  padding-bottom: govuk-spacing(4);
+  background-color: govuk-colour("blue");
+  color: #fff;
+  margin-top: -10px;
+}
+
+.info-banner {
+background: #f3f2f1;
+padding: 20px 0 20px 0;
+}
+
+.extra-line-height {
+  line-height: 2em;
+}
+
+.start-page-banner__tag {
+  background-color: govuk-colour("white");
+  color: govuk-colour("blue");
+
+  > :last-child { margin-bottom: 0 !important; margin-right: 0 !important; }
+}
+
+.start-page-banner__heading,
+.start-page-banner__description {
+  margin-bottom: govuk-spacing(6);
+}
+
+.start-page-banner__actions {
+  font-family: "GDS Transport", Arial, sans-serif;
+  color: #fff;
+
+  @include govuk-media-query($from: tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.start-page-banner__text,
+.start-page-banner__link,
+.start-page-banner__link:link,
+.start-page-banner__link:visited,
+.start-page-banner__actions .govuk-link {
+  color: #fff;
+}
+
+.start-page-banner__actions p {
+  margin-bottom: 0;
+}
+
+.start-page-banner__button.govuk-button:link,
+.start-page-banner__button.govuk-button:visited,
+.start-page-banner__button.govuk-button:active,
+.start-page-banner__button.govuk-button:hover {
+  margin-bottom: govuk-spacing(3);
+  color: govuk-colour("blue");
+  background-color: #fff;
+  box-shadow: 0 2px 0 #00508c;
+
+  @include govuk-media-query($from: tablet) {
+    margin-right: govuk-spacing(3);
+    margin-bottom: 0;
+  }
+}
+
+.start-page-banner__button.govuk-button:hover {
+  background-color: #e8f1f8;
+}
+
+
+.govuk-header__container {
+    position: relative;
+    margin-bottom: 1px;
+    padding-top: 10px;
+    border-bottom: 0;
+  }
