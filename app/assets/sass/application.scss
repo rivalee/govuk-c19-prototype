@@ -15,8 +15,14 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+
+.div-line {
+  height: 3px;
+  background: black;
+}
 
 .statistics-grid {
   margin-bottom: govuk-spacing(1);
@@ -66,7 +72,7 @@ border-left: 2px solid green;
     border-bottom: 0px;
 }
 
-.important-actions a, a:visited {
+.important-actions a {
 color: white;
 }
 
