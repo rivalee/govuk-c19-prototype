@@ -18,9 +18,20 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.end-page p {
+  line-height: 60%;
+  font-weight: bold;
+}
+
+.end-page a, a:visited {
+  text-decoration: none;
+}
+
+.end-page {
+margin-top: 30px;}
 
 .div-line {
-  height: 3px;
+  height: 2px;
   background: black;
 }
 
