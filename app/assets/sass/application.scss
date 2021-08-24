@@ -18,6 +18,20 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+
+.govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
+    padding-top: 30px;
+  }
+
+
+.stay-up-to-date {
+  width: 66%;
+  margin: 55px 30px 15px 0;
+  padding: 30px 30px 20px 30px;
+  border: 1px solid  govuk-colour("mid-grey");
+  background: govuk-colour("light-grey");
+}
+
 .end-page p {
   line-height: 60%;
   font-weight: bold;
