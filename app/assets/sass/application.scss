@@ -19,6 +19,10 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 
+.statblock {
+  margin-bottom: 30px;
+}
+
 .govuk-main-wrapper--auto-spacing:first-child, .govuk-main-wrapper--l {
     padding-top: 30px;
   }
@@ -33,7 +37,7 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .end-page p {
-  line-height: 60%;
+  line-height: 90%;
   font-weight: bold;
 }
 
