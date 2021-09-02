@@ -25,6 +25,7 @@
 
          <h1 class="start-page-banner__text start-page-banner__heading govuk-heading-xl">Coronavirus</h1>
 
+<!--
          <div class="important-actions">
          <h2 class="govuk-heading-m">
           <img class="arrow" src="public/images/jarrow.png"><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/book-coronavirus-vaccination/">Book a vaccination</a></h2>
@@ -33,7 +34,7 @@
            <h2 class="govuk-heading-m">
             <img class="arrow" src="public/images/jarrow.png">  <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/testing/get-tested-for-coronavirus/">Get a Coronavirus test</a></h2>
              </div>
-
+-->
            <!--<p class="start-page-banner__text start-page-banner__description govuk-body govuk-!-font-size-27">Coronavirus landing page prototype</p>
 
          <div class="start-page-banner__actions">
@@ -64,7 +65,7 @@
 
            <p class="govuk-heading-s">Coronavirus remains a serious health risk. It’s important to stay cautious and help protect yourself and others. In England:</p>
 
-             <ul class="govuk-list-bullet govuk-body-s extra-line-height">
+             <ul class="govuk-list-bullet govuk-body-m extra-line-height">
                <li>If you think you might have COVID-19 symptoms, <a href="#">take a PCR test</a> and stay home.</li>
            <li>Wear face coverings in crowded places to help protect others.</li>
            <li>Check in with the NHS COVID-19 app when you’re out.</li>
@@ -85,38 +86,49 @@
 
 {% block content %}
 
-<!-- Topic callout
+<!-- Topic callout -->
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-quarter">
-    <h2 class="govuk-heading-s">Testing for COVID-19</h2>
-    <p class="govuk-body-m">
+  <div class="govuk-grid-column-one-half topical-topic">
+    <h2 class="govuk-heading-m">Get tested for COVID-19 if you have or do not have symptoms</h2>
+  <p class="govuk-body-m">
       You can get tested for COVID-19 if you either have or do not have symptoms.
       </p>
-      <p class="govuk-body-m"><a href="#">Find out which coronavirus test you should get on NHS.UK</a></p>
+
+      <p class="govuk-body-m"><img class="arrow" src="public/images/jarrow.png"><a href="#">Find out which coronavirus test you should get on NHS.UK</a></p>
   </div>
-  <div class="govuk-grid-column-one-quarter">
-    <h2 class="govuk-heading-s">Get vaccinated</h2>
+  <div class="govuk-grid-column-one-half topical-topic">
+    <h2 class="govuk-heading-m">Get vaccinated for COVID-19</h2>
+
     <p class="govuk-body-m">
-Find out who can get the COVID-19 vaccine and how to book or manage your appointment.      </p>
-      <p class="govuk-body-m"><a href="#">COVID-19 vaccination information on NHS.UK</a></p>
+Find out who can get the COVID-19 vaccine and how to book or manage your appointment.</p>
+
+      <p class="govuk-body-m"><img class="arrow" src="public/images/jarrow.png"><a href="#">COVID-19 vaccination information on NHS.UK</a></p>
+
   </div>
-  <div class="govuk-grid-column-one-quarter">
-    <h2 class="govuk-heading-s">Travelling abroad</h2>
+
+  </div>
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half topical-topic">
+    <h2 class="govuk-heading-m">Travelling abroad</h2>
+
     <p class="govuk-body-m">
     Find out the steps you need to take before travelling abroad and returning to England.
       </p>
-      <p class="govuk-body-m"><a href="#">Travel abroad: what you need to do</a></p>
+
+      <p class="govuk-body-m"><img class="arrow" src="public/images/jarrow.png"><a href="#">Travel abroad: what you need to do</a></p>
   </div>
-  <div class="govuk-grid-column-one-quarter">
-    <h2 class="govuk-heading-s">Self-Employment Income Support Scheme (SEISS)</h2>
+  <div class="govuk-grid-column-one-half topical-topic">
+    <h2 class="govuk-heading-m">Self-Employment Income Support Scheme fifth grant</h2>
+
     <p class="govuk-body-m">
       The fifth grant of the Self-Employment Income Support Scheme is open until 30 September 2021.
       </p>
-      <p class="govuk-body-m"><a href="#">Check if you can claim a SEISS grant</a></p>
+
+      <p class="govuk-body-m"><img class="arrow" src="public/images/jarrow.png"><a href="#">Check if you can claim before 30 September</a></p>
   </div>
 </div>
--->
+
 
 <!-- Travel abroad
 
@@ -294,7 +306,9 @@ If you’re fully vaccinated or under 18 you no longer need to self-isolate afte
 <!-- clunky HTML alert -->
 
  <div class="govuk-grid-column-one-third statblock">
-      <p class="govuk-heading-s">People tested </br> positive</p>
+      <p class="govuk-body-s stat-title">
+       Cases</br>
+       <span class="govuk-heading-s">People tested </br> positive</span></p>
        <p class="govuk-body-s">
        Daily</br>
        <span class="govuk-heading-s">
@@ -316,7 +330,9 @@ If you’re fully vaccinated or under 18 you no longer need to self-isolate afte
 
 
   <div class="govuk-grid-column-one-third statblock">
-       <p class="govuk-heading-s">Patients admitted to</br> hospital
+       <p class="govuk-body-s stat-title">
+        Healthcare</br>
+        <span class="govuk-heading-s">Patients admitted to</br> hospital</span>
         <p class="govuk-body-s">
         Daily</br>
         <span class="govuk-heading-s">
@@ -337,7 +353,9 @@ If you’re fully vaccinated or under 18 you no longer need to self-isolate afte
 
 
    <div class="govuk-grid-column-one-third statblock">
-        <p class="govuk-heading-s">People vaccinated, percent of adult population</p>
+        <p class="govuk-body-s stat-title">
+         Vaccinations</br>
+         <span class="govuk-heading-s">People vaccinated, percent of adult population </span></p>
          <p class="govuk-body-s">
          1st dose</br>
 
