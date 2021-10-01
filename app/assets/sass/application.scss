@@ -19,6 +19,9 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.nhs {
+  width: 100px;
+}
 .nhs-box {
   border: 3px solid black;
   padding: 15px;
