@@ -20,8 +20,15 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 .nhs-box {
-  border: 4px solid black;
+  border: 3px solid black;
   padding: 15px;
+}
+
+.nhs-box-2 {
+  width: 88%;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .stat-1col {
@@ -46,10 +53,13 @@ $govuk-assets-path: '/govuk/assets/';
   margin-bottom: 40px;
 }
 
-.stat-title {
+.stat-title2 {
   border-bottom: 0px solid govuk-colour("light-grey");
 }
 
+.stat-title2 {
+  padding-top: 20px;
+}
 .statblock {
 }
 
@@ -70,6 +80,14 @@ $govuk-assets-path: '/govuk/assets/';
   background: govuk-colour("light-grey");
 }
 
+.stay-up-to-date2 {
+  width: 66%;
+  margin: 55px 30px 15px 0;
+  padding: 30px 30px 20px 30px;
+  border: 1px solid  govuk-colour("mid-grey");
+  background: govuk-colour("light-grey");
+}
+
 .end-page p {
   line-height: 90%;
   font-weight: bold;
@@ -84,7 +102,7 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .end-page {
-margin-top: 30px;}
+margin-bottom: 20px;}
 
 .div-line {
   height: 2px;
