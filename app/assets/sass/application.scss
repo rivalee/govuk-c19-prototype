@@ -101,12 +101,14 @@ $govuk-assets-path: '/govuk/assets/';
   font-weight: bold;
 }
 
+
+
 .end-page2 a, a:visited {
   text-decoration: underline;
 }
 
 .end-page a, a:visited {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .end-page {
