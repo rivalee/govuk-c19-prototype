@@ -19,8 +19,16 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.selected-nation {
+  border-left: 6px solid  $govuk-brand-colour;
+  padding: 12px;
+}
+.all-nations-block {
+  margin-bottom: 30px;
+}
+
 .reduce {
-  margin-bottom: -5px; 
+  margin-bottom: -5px;
 }
 .xtra {
   padding-top: 20px;

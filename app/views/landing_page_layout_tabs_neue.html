@@ -1,0 +1,436 @@
+{% extends "layout.html" %}
+{% set bodyClasses = "start-page" %}
+{% set hideNav = true %}
+{% set hidePrimaryNav = true %}
+
+{% block pageTitle %}
+ {{ pageHeading }} - GOV.UK
+{% endblock %}
+
+{% set pageHeading = 'Coronavirus' %}
+
+{% block beforeContent %}
+{# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+ <div class="start-page-banner">
+
+   <div class="govuk-width-container">
+     <div class="govuk-phase-banner">
+
+     </div>
+     <div class="govuk-grid-row">
+       <div class="govuk-grid-column-two-thirds">
+
+         <h1 class="start-page-banner__text start-page-banner__heading govuk-heading-xl">Coronavirus (COVID‑19)</h1>
+
+
+       </div>
+
+       </div>
+     </div>
+   </div>
+
+
+   <div class="info-banner">
+
+     <div class="govuk-width-container">
+
+       <div class="govuk-grid-row">
+         <div class="govuk-grid-column-two-thirds">
+
+           <p class="govuk-heading-s">Coronavirus remains a serious health risk. You should stay cautious to help protect yourself and others.</p>
+
+             <ul class="govuk-list-bullet govuk-body-m extra-line-height">
+               <li>Let fresh air in if you meet indoors. Meeting outdoors is safer</li>
+           <li>Wear a face covering in crowded and enclosed spaces where you come into contact with people you do not normally meet</li>
+           <li><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/testing/get-tested-for-coronavirus/">Get tested</a> and self-isolate if required</li>
+           <li>If you haven’t already, <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/">get vaccinated</a></li>
+           </ul>
+
+           <p class="govuk-heading-s"><a href="https://www.gov.uk/guidance/covid-19-coronavirus-restrictions-what-you-can-and-cannot-do"><img class="arrow" src="public/images/jarrow-blue-3.svg">Find out how to stay safe and help prevent the spread</a></p>
+
+         </div>
+
+         </div>
+       </div>
+     </div>
+   </div>
+
+ {# pulls in default gov uk template #}
+ {{super()}}
+{% endblock %}
+
+{% block content %}
+
+
+<!-- NHS box and nation picker container -->
+
+<div class="govuk-width-container xtra">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h2 class="govuk-heading-m">Recent and upcoming changes</h2>
+        <p class="govuk-body-m">
+          Show guidance for:
+        </p>
+
+      <div class="all-nations-block">
+      <p class="govuk-heading-s selected-nation">England</p>
+      <p class="govuk-body-m"><a href="landing_page_layout_tabs_neue_ni">Northern Ireland</a></p>
+      <p class="govuk-body-m"><a href="#">Scotland</a></p>
+      <p class="govuk-body-m"><a href="#">Wales</a></p>
+      </div>
+      </div>
+
+
+        <div class="govuk-grid-column-two-thirds">
+          <!-- Nation picker and timeline   -->
+
+
+
+            <h3 class="govuk-heading-s">11 January <strong class="govuk-tag govuk-tag--blue">
+            ENGLAND
+            </strong></h3>
+
+            <p class="govuk-body-m">
+      If you get a positive rapid lateral flow test result, <a href="#">most people will not need to take a PCR test to confirm the result</a>. You must self-isolate immediately if you get a positive rapid lateral flow test result.        </p>
+
+              <h3 class="govuk-heading-s">9 January  <strong class="govuk-tag govuk-tag--blue">
+              ENGLAND </strong></h3>
+              <p class="govuk-body-m">
+                From 4am on 9 January, <a href="https://www.gov.uk/guidance/travel-to-england-from-another-country-during-coronavirus-covid-19">if you qualify as fully vaccinated</a>, you can take either a rapid lateral flow or PCR test within 2 days of arriving in England. If you have a positive result on the rapid lateral flow test, you must take a PCR test.
+                </p>
+
+                <h3 class="govuk-heading-s">7 January  <strong class="govuk-tag govuk-tag--blue">
+                ENGLAND </strong></h3>
+                <p class="govuk-body-m">
+                  From 4am on 7 January, if you <a href="https://www.gov.uk/guidance/travel-to-england-from-another-country-during-coronavirus-covid-19">qualify as fully vaccinated</a> or are under 18, you do not need to take a PCR test before you travel to England or self-isolate when you arrive.
+                  </p>
+            </div>
+
+      <div class="govuk-grid-column-one-third">
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+<div class="div-line govuk-!-margin-bottom-5 govuk-!-margin-top-5">&nbsp;</div>
+
+<div class="govuk-grid-row nhs-box-2">
+  <div class="govuk-grid-column-one-third">
+    <img class="nhs" src="public/images/nhs.svg">
+
+    <h2 class="govuk-heading-m">Testing for coronavirus (COVID-19)</h2>
+
+  </div>
+
+
+    <div class="govuk-grid-column-two-thirds">
+
+<p class="govuk-heading-s"><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/testing/">Testing for coronavirus (COVID-19)</a></p>
+<p class="govuk-body-m">Find out what test you should get, what your test results mean and how to report your result. </p>
+<p class="govuk-heading-s"><a href="https://govuk-c19-prototype.herokuapp.com/landing_page_layout_d">Coronavirus (COVID-19) vaccination</a></p>
+<p class="govuk-body-m">Get your COVID-19 vaccination, read about the vaccines and find out what happens when you have your vaccine.</p>
+
+</div>
+</div>
+
+<!-- Guidance accordion -->
+
+<div class="div-line govuk-!-margin-bottom-5 govuk-!-margin-top-5">&nbsp;</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">
+      Guidance and support
+    </div>
+
+
+
+  <div class="govuk-grid-column-two-thirds">
+
+<div class="gem-c-accordion govuk-!-margin-bottom-6" id="default-id-1a701224" data-module="gem-accordion" data-anchor-navigation="false" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all sections" data-hide-all-text="Hide all sections" data-this-section-visually-hidden=" this section">
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-1" class="gem-c-accordion__section-button">Staying safe</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes advice on preventing the spread of coronvirus, mental health and domestic abuse</div>
+    </div>
+    <div id="default-id-1a701224-content-1" class="gem-c-accordion__section-content" aria-label="Guidance and support"><p class="govuk-body">This is the content for Guidance and support.</p></div>
+  </section>
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-2" class="gem-c-accordion__section-button">Testing and self-isolating</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes information on booking and ordering coronavirus tests, reporting your results and surge testing</div>
+    </div>
+    <div id="default-id-1a701224-content-2" class="gem-c-accordion__section-content" aria-label="Staying safe"><p class="govuk-body">This is the content for Staying safe.</p></div>
+  </section>
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-3" class="gem-c-accordion__section-button">International travel</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes guidance on travelling abroad and returning to England</div>
+    </div>
+    <div id="default-id-1a701224-content-3" class="gem-c-accordion__section-content" aria-label="Testing and isolating">
+      <p class="govuk-heading-s">
+        <a href="https://draft-origin.publishing.service.gov.uk/travel-abroad-from-england-check-what-you-need-to[…]5MTF9.dDWNTs1TExV3nN8U8vyxFf3BOix4-dMOyvfifdnTMxM">
+          Travel abroad from England during coronavirus: check what you need to do</a>
+          <br>
+        <span class="govuk-body-m">Find out the steps you need to take before travelling abroad and returning to England.</span>
+      </p></div>
+  </section>
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-4" class="gem-c-accordion__section-button">Vaccination</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes information on booking vaccination and booster appointments, and vacine safety</div>
+    </div>
+    <div id="default-id-1a701224-content-4" class="gem-c-accordion__section-content" aria-label="Vaccination">
+
+    </div>
+  </section>
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-4" class="gem-c-accordion__section-button">Long COVID</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes advice, support and treatment options</div>
+    </div>
+    <div id="default-id-1a701224-content-4" class="gem-c-accordion__section-content" aria-label="LongCOVID">
+    </div>
+  </section>
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-4" class="gem-c-accordion__section-button">Self-employment and businesses</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes keeping your business safe and getting financial support</div>
+    </div>
+    <div id="default-id-1a701224-content-4" class="gem-c-accordion__section-content" aria-label="Self-employment">
+
+    </div>
+  </section>
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-4" class="gem-c-accordion__section-button">Work and support</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes guidance on finding work, self-employment and benefits</div>
+    </div>
+    <div id="default-id-1a701224-content-4" class="gem-c-accordion__section-content" aria-label="Work">
+
+    </div>
+  </section>
+  <section class="gem-c-accordion__section">
+    <div class="gem-c-accordion__section-header">
+      <h2 class="gem-c-accordion__section-heading">
+        <span id="default-id-1a701224-heading-4" class="gem-c-accordion__section-button">Schools, universities, education and childcare</span>
+      </h2>
+      <div id="default-id-8b3ba2c2-summary-1" class="gem-c-accordion__section-summary govuk-body">Includes guidance for parents, carers, students and education settings
+</div>
+    </div>
+    <div id="default-id-1a701224-content-4" class="gem-c-accordion__section-content" aria-label="Schools">
+
+    </div>
+  </section>
+</div>
+
+<p class="govuk-body-m"><a href="#">See all coronavirus guidance on GOV.UK</a></p>
+
+<p class="govuk-body-m"><a href="#">See specific guidance for Scotland, Wales and Northern Ireland</a></p>
+
+
+
+</div>
+</div>
+
+<!-- Statistics  -->
+
+<div class="div-line govuk-!-margin-bottom-5 govuk-!-margin-top-9">&nbsp;</div>
+
+<h2 class="govuk-heading-m">UK COVID-19 statistics</h2>
+
+
+<p class="govuk-body-m end-page2"><a href="#">Daily summary of coronavirus testing, cases and vaccinations</a></p>
+
+
+<div class="2statistics-grid">
+
+<div class="govuk-grid-row">
+
+<!-- clunky HTML alert -->
+
+ <div class="govuk-grid-column-one-third statblock">
+      <p class="govuk-body-s stat-title">
+
+       <span class="govuk-heading-s xtra-padding">People tested positive</br>
+ <span class="govuk-body-xs">Latest data provided on 15 August 2021</span>
+       </span>
+
+</p>
+
+       <p class="govuk-body-s">
+       Daily</br>
+       <span class="govuk-heading-s">
+         33,904
+      </span>
+     </p>
+   <p class="govuk-body-s">
+    Last 7 days</br>
+      <span class="govuk-heading-s">
+        211,238 <strong class="govuk-tag--yellow statistics-padding"><img class="stat-arrow" src="public/images/arrow_down_yellow.svg"> -14,891 <span class="govuk-tag--yellow govuk-body-s">(-7.6%)</span> </strong></span>
+
+       </p>
+
+  </div>
+
+
+  <div class="govuk-grid-column-one-third statblock">
+       <p class="govuk-body-s stat-title">
+
+        <span class="govuk-heading-s xtra-padding">Patients admitted to hospital </br>
+  <span class="govuk-body-xs">Latest data provided on 15 August 2021</span></span>
+        <p class="govuk-body-s">
+        Daily</br>
+        <span class="govuk-heading-s">
+       773
+       </span>
+      </p>
+    <p class="govuk-body-s">
+       Last 7 days</br>
+       <span class="govuk-heading-s">
+         5,623 <strong class="govuk-tag--yellow statistics-padding"><img class="stat-arrow" src="public/images/arrow_up_yellow.svg"> 232 <span class="govuk-tag--yellow govuk-body-s">(4.3%)</span> </strong></span>
+
+        </p>
+
+   </div>
+
+
+   <div class="govuk-grid-column-one-third statblock">
+        <p class="govuk-body-s stat-title">
+
+         <span class="govuk-heading-s">People vaccinated, percent of population aged 12 and over
+       </br>
+ <span class="govuk-body-xs">Latest data provided on 15 August 2021</span> </span>
+       </p>
+         <p class="govuk-body-s">
+         1st dose</br>
+
+         <span class="govuk-heading-s">
+          89.2% (48,503,181 people)<!-- <span class="govuk-body-xs trend">+ 95,992 (40.7%)</span>
+        </span>-->
+       </p>
+     <p class="govuk-body-s">
+        2nd dose</br>
+        <span class="govuk-heading-s">
+          81.4% (44,229,777 people) <!-- <span class="govuk-body-xs trend">+ 95,992 (40.7%)</span>
+        </span>-->
+         </p>
+
+         <p class="govuk-body-s">
+            Booster or 3rd dose</br>
+            <span class="govuk-heading-s">
+              81.4% (44,229,777 people) <!-- <span class="govuk-body-xs trend">+ 95,992 (40.7%)</span>
+            </span>-->
+             </p>
+    </div>
+  </div>
+</div>
+
+<ul class="govuk-list end-page2">
+
+  <li><p class="govuk-body-m"><a href="#">Data and trends from the Office for National Statistics (ONS)</a></p><li>
+  <li><p class="govuk-body-m"><a href="#">Full data and analysis on coronavirus</a></p><li>
+</ul>
+
+
+
+<!-- Announcements -->
+<div class="div-line govuk-!-margin-bottom-5 govuk-!-margin-top-9">&nbsp;</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">
+      Announcements
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+      <h3 class="govuk-heading-s">
+        <a href="#">
+      Booking opens for COVID-19 booster vaccines (from NHS England website)
+          </a></br>
+        <span class="govuk-body-s">
+      Published 21 September 2021</span></h3>
+
+      <h3 class="govuk-heading-s"><a href="#">
+      Secretary of State for Transport: statement to Parliament on international travel
+        </a></br>
+        <span class="govuk-body-s">
+      Published 20 September 2021</span></h3>
+
+      <h3 class="govuk-heading-s">
+        <a href="#">
+      	New rules for international travel to England
+          </a></br>
+        <span class="govuk-body-s">
+      Published 17 September 2021</span></h3>
+
+      <h3 class="govuk-heading-s"><a href="#">
+      Shielding programme ends for clinically extremely vulnerable
+      </a></br>
+        <span class="govuk-body-s">
+      Published 15 September 2021</span></h3>
+
+      <p class="govuk-body-m"><a href="#">See all announcements</a></p>
+      </div>
+      </div>
+
+
+
+
+
+
+<div class="div-line govuk-!-margin-bottom-5 govuk-!-margin-top-9">&nbsp;</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">
+      All Coronavirus information on GOV.UK
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+<ul class="govuk-list end-page">
+  <li><p><a href="#">Guidance</a></p><li>
+  <li><p><a href="#">News</a></p><li>
+  <li><p><a href="#">Press conferences (YouTube)</a></p><li>
+  <li><p><a href="#">Press conference statements</a></p><li>
+</ul>
+</div>
+</div>
+
+<!--
+
+<div class="stay-up-to-date2">
+<h2 class="govuk-heading-s">Stay up to date with GOV.UK</h2>
+<p class="govuk-body-m"><a href="#">Sign up to get emails when we change any coronavirus information on the GOV.UK website</a>
+</p>
+</div>
+-->
+
+
+</div>
+
+{% endblock %}
