@@ -21,7 +21,11 @@ $govuk-assets-path: '/govuk/assets/';
 
 .selected-nation {
   border-left: 6px solid  $govuk-brand-colour;
-  padding: 12px;
+  padding: 5px 5px 5px 15px;
+}
+
+.unselected-nation {
+  padding: 5px;
 }
 .all-nations-block {
   margin-bottom: 30px;
